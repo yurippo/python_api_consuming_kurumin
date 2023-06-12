@@ -1,10 +1,31 @@
-from validate_docbr import CPF
-from cpf import Cpf
+from CpfCnpj import Documento
+from validate_docbr import CNPJ
+
+#cpf_um = Cpf("15316264754")
+#print(cpf_um)
+
+exemplo_cnpj = "35379838000112"
+exemplo_cpf = "11111111112"
+
+#cnpj = CNPJ()
+#print(cnpj.validate(exemplo_cnpj))
+documento = Documento.cria_documento(exemplo_cpf)
+print(documento)
 
 
-cpf = CPF()
+# cnpj = CNPJ()
 
-print(cpf.validate("15316389752"))
+# print(cnpj.validate(cnpj_exemplo))
+
+# one_cpf = Cpf("33451556804")
+# print(one_cpf)
+
+
+
+#Testing 
+# cpf = CPF()
+
+# print(cpf.validate("15316389752"))
 
 
 
