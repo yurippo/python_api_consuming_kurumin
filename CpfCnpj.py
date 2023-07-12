@@ -17,7 +17,9 @@ class Documento:
         else:
             raise ValueError("Wrong Document!")
         
-        
+#we are being able to validade CPFs and CNPJs using a class called factory that is able to instance other classes
+#based on an attribute in this case we used len() for that if 11 CPF if 14 CNPJ and we return either class DocCpf or DocCnpj
+#another interesting thing about factory is if I want to add another document another elif with that        
         # 1- Agora, criamos os condicionais:
 
 class DocCpf:
